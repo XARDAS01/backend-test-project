@@ -1,48 +1,33 @@
-# Wallet Service
+# Testový projekt pro Java vývojáře #
 
-## Popis projektu
 
-Wallet Service je aplikace pro testovací úkol na správu peněženek.
+## Úvod 
 
-## Požadavky
+  Vítáme Vás na našem testovacím projektu. Jsme velmi rádi, že jste se rozhodl/a absolvovat tento vstupní projekt na pozici Java Backend Developer. Upřesňujeme, že se nejedná o placený projekt, ale o vstupní testovací projekt pro posouzení Vašich znalostí.
 
-- Docker 20.10 nebo novější
-- Docker Compose 1.29 nebo novější
+## Instrukce
 
-## Instalace a spuštění pomocí Dockeru
+Vytvořte jednoduchou webovou aplikaci s využitím Vám známých "best practices".
 
-### 1. Klonování repozitáře
+* Použijte Javu 17.
+* Aplikace musí běžet v servletovém kontejneru Tomcat min. verze 10.1.
+* Využijte Spring Framework v.5. / Spring Boot
+* Vytvořte 2 entity (každá cca 3 atributy), s vazbou mezi nimi 1:N (např. seznam aut a ke každému autu evidovaná jednotlivá čerpání paliva).
+* Realizujte webové rozhraní pro výpis, vkládání, editaci a mazání entit.
+  - Vzhled nehraje roli.
+* Ošetření vstupů postačuje na straně serveru.
+* Pro perzistenci dat využijte relační databázi, v aplikaci by měl být alespoň jeden složitější SQL dotaz.
 
-Klonujte repozitář do vašeho lokálního počítače:
+## Doručení
 
-```properties
-git clone git@github.com:XARDAS01/backend-test-project.git
-cd wallet
-cd wallet-devops
-cd docker
-```
+* Až budete hotov, pozvěte [ondrej.berger@level.systems](mailto:ondrej.berger@level.systems) a [karel.ulman@level.systems](mailto:karel.ulman@level.systems) do vašeho repozitáře v gitu (např. GitHub, Bitbucket). 
 
-### 2. Sestavení a spuštění projektu
+* V případě jakýchkoliv dotazů pište na [developers@level.systems](mailto:developers@level.systems)
 
-```properties
-docker-compose up --build -d
-```
+## Upřesnění
 
-### 3. Logy
+* Spuštění a build aplikace pro vývojáře by měly být dokumentovány.
 
-```properties
-docker logs -f <containerId>
-```
+* Projekt je velmi otevřený, v kreativitě se meze nekladou. Překvapte nás!
 
-### 4. Zastavení aplikace
-
-```properties
-docker-compose down
-```
-
-## Swagger API
-
-### Swagger je k dispozici na odkazu
-```properties
-http://localhost:8081/swagger-ui/index.html#/
-```
+* Doba na projektu by neměla přesáhnout cca 2 dny čistého času (tj. 16 hod. práce)
